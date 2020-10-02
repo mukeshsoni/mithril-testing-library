@@ -1,4 +1,4 @@
-import * as m from "mithri";
+import m from "mithri";
 import { getQueriesForElement, prettyDOM } from "@testing-library/dom";
 
 /*

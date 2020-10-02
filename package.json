@@ -2,8 +2,24 @@
   "name": "mithril-testing-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/mithril-testing-library.cjs.js",
+  "module": "dist/mithril-testing-library.esm.js",
+  "browser": "dist/mithril-testing-library.umd.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3"
+  },
+  "peerDependencies": {
+    "mithril": "2.0.4"
+  },
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
