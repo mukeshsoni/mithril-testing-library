@@ -1,6 +1,7 @@
 import m from "mithril";
 import { getQueriesForElement, prettyDOM } from "@testing-library/dom";
 
+const mountedContainers = new Set();
 /*
  * Most of it is copied from https://github.com/testing-library/react-testing-library
  * The main difference is that instead of taking the element created by
