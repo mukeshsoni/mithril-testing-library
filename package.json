@@ -28,6 +28,11 @@
     "mithril-testing-library",
     "component-testing"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mukeshsoni/mithril-testing-library"
+  },
+  "homepage": "https://github.com/mukeshsoni/mithril-testing-library",
   "author": "Mukesh Soni",
   "license": "MIT",
   "dependencies": {
