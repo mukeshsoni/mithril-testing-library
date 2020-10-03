@@ -21,7 +21,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
-  "keywords": [],
+  "keywords": ["mithril", "testing", "testing-library", "mithril-testing-library", "component-testing"],
   "author": "Mukesh Soni",
   "license": "MIT",
   "dependencies": {
