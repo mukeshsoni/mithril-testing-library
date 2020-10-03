@@ -1,6 +1,6 @@
 {
   "name": "mithril-testing-library",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/mithril-testing-library.cjs.js",
   "module": "dist/mithril-testing-library.esm.js",
@@ -21,7 +21,13 @@
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
-  "keywords": ["mithril", "testing", "testing-library", "mithril-testing-library", "component-testing"],
+  "keywords": [
+    "mithril",
+    "testing",
+    "testing-library",
+    "mithril-testing-library",
+    "component-testing"
+  ],
   "author": "Mukesh Soni",
   "license": "MIT",
   "dependencies": {
