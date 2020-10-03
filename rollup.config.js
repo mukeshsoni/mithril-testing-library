@@ -12,6 +12,7 @@ export default [
 			file: pkg.browser,
 			format: 'umd'
 		},
+    external: ['@testing-library/dom'],
 		plugins: [
       peerDepsExternal(),
 			resolve(), // so Rollup can find `ms`
@@ -31,6 +32,7 @@ export default [
 			{ file: pkg.main, format: 'cjs' },
 			{ file: pkg.module, format: 'es' }
 		],
+    external: ['@testing-library/dom'],
 		plugins: [
       peerDepsExternal(),
     ]
