@@ -15,7 +15,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.3"
   },
   "peerDependencies": {
-    "mithril": "2.0.4"
+    "mithril": "1.x or 2.x"
   },
   "scripts": {
     "build": "rollup -c",
