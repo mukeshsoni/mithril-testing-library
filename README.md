@@ -36,6 +36,8 @@ https://mithril.js.org/components.html#avoid-creating-component-instances-outsid
 
 
 ```
+import { render, fireEvent, waitFor } from "mithril-testing-library";
+
 async function wait(waitTime) {
   return new Promise((res) => setTimeout(res, waitTime));
 }
