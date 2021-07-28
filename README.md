@@ -61,9 +61,6 @@ const ComponentToTest = {
           {
             onDocumentClick: () => {
               vnode.state.showList = false;
-              // since this click handler is outside mithril ecosystem, we 
-              // have to force redraw
-              m.redraw();
             },
           },
           m("ul", { "data-testid": "the-list" }, [(m("li", 1), m("li", 2))])
