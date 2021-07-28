@@ -1,5 +1,24 @@
 import m from "mithril";
-import { getQueriesForElement, prettyDOM } from "@testing-library/dom";
+import { getQueriesForElement, prettyDOM, configure} from "@testing-library/dom";
+
+/**
+ * This avoid the need to add redraw to the callbacks or manually call
+ * m.redraw.sync() from within the tests.
+ */
+configure({
+  eventWrapper: (cb) => {
+    const result = cb();
+    m.redraw.sync();
+    return result;
+  },
+  asyncWrapper: (cb) => {
+    const result = cb();
+    m.redraw.sync();
+    return result;
+  }
+});
+
+
 
 const mountedContainers = new Set();
 /*
